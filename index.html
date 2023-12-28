@@ -251,13 +251,28 @@
         <div class="modal">
             <button class="modal-btn-close" type="button">Close</button>
             <h2>Замовити дзвінок</h2>
-            <p>Запишіться <span class="accent">безкоштовно</span> та отримайте подарунок</p>
+            <p class="modal-text">Запишіться <span class="accent">безкоштовно</span> та отримайте подарунок</p>
             <form name="modal-form" autocomplete="on">
                 <div class="form-field">
                     <label class="form-label vissully-hidden" for="user-name">Ваше ім'я та прізвище</label>
-                    <input class="input-form" type="text" id="user-name" name="user-name"
+                    <input class="form-input" type="text" id="user-name" name="user-name"
                         placeholder="Ваше ім'я та прізвище" required />
                 </div>
+                <div class="form-field">
+                    <label class="form-label vissully-hidden" for="user-tel">Ваш номер телефону</label>
+                    <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Ваш номер телефону"
+                        required />
+                </div>
+                <div class="form-field">
+                    <label class="form-label vissully-hidden" for="user-tel">Ваша електронна пошта</label>
+                    <input class="form-input" type="email" id="user-email" name="user-email"
+                        placeholder="Ваша електронна пошта" required />
+                </div>
+                <button class="button form-button" type="submit">Записатись безкоштовно</button>
+                <p class="form-terms">
+                    Натискаючи на кнопку я погоджуюсь
+                    <a class="form-terms-link" href="#">з політикою конфіденційності</a>
+                </p>
             </form>
         </div>
     </div>

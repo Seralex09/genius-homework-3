@@ -601,11 +601,12 @@ ul {
 
 .modal h2 {
   font-size: 64px;
+  line-height: 1.1;
   text-align: center;
   margin-bottom: 40px;
 }
 
-.modal p {
+.modal-text {
   font-weight: 500;
   font-size: 22px;
   text-align: center;
@@ -623,16 +624,53 @@ ul {
 }
 
 /* Form */
+.form-field {
+  margin-bottom: 24px;
+}
+
 .form-label {
   display: block;
 }
 
-.input-form {
+.form-input {
   padding: 18px 32px;
   width: 100%;
-  font-style: 13px;
+  font-size: 13px;
   line-height: 1.17;
   border: 2px solid #747272;
   border-radius: 32px;
   background-color: transparent;
+  color: var(--color-primary-white);
+}
+
+.form-input::placeholder {
+  font-size: 13px;
+  line-height: 1.17;
+  color: var(--color-primary-white);
+}
+
+.form-input:hover {
+  background-color: #747272;
+}
+
+.form-button {
+  display: block;
+  margin: 0 auto 8px;
+}
+
+.form-button:hover {
+  color: var(--color-primary-white);
+}
+
+.form-terms {
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: center;
+  color: #747272;
+}
+
+.form-terms-link {
+  color: #747272;
 }
