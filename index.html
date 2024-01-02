@@ -256,12 +256,12 @@
                 <div class="form-field">
                     <label class="form-label vissully-hidden" for="user-name">Ваше ім'я та прізвище</label>
                     <input class="form-input" type="text" id="user-name" name="user-name"
-                        placeholder="Ваше ім'я та прізвище" required />
+                        placeholder="Ваше ім'я та прізвище" required pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$" />
                 </div>
                 <div class="form-field">
                     <label class="form-label vissully-hidden" for="user-tel">Ваш номер телефону</label>
                     <input class="form-input" type="tel" id="user-tel" name="user-tel" placeholder="Ваш номер телефону"
-                        required />
+                        required pattern="^\+380[0-9]{9}" />
                 </div>
                 <div class="form-field">
                     <label class="form-label vissully-hidden" for="user-tel">Ваша електронна пошта</label>
