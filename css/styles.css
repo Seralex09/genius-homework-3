@@ -544,6 +544,7 @@ ul {
 
 .footer-link:hover {
   transform: scale(1.05);
+  color: var(--color-primary-light);
 }
 
 .footer-link-social-networks {
