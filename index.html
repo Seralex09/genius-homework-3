@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
-<body>
+<body class="body-background">
     <header class="header">
         <div class="container container-blur">
             <nav class="header-container">
@@ -114,7 +114,7 @@
                         <svg width="48" height="48">
                             <use href="./images/icons.svg#icon-materials-science"></use>
                         </svg>
-                        <p>
+                        <p class="advantages-section-list-text">
                             Всі наші косметологи мають вищу медичну освіту та стаж роботи від 5 років
                         </p>
                     </li>
@@ -122,7 +122,7 @@
                         <svg width="48" height="48">
                             <use href="./images/icons.svg#icon-medicine_cosmetics"></use>
                         </svg>
-                        <p>
+                        <p class="advantages-section-list-text">
                             Використовуємо тільки професійне обладнання та косметику, перевірену
                             часом
                         </p>
@@ -131,7 +131,7 @@
                         <svg width="48" height="48">
                             <use href="./images/icons.svg#icon-crown"></use>
                         </svg>
-                        <p>
+                        <p class="advantages-section-list-text">
                             Наша мета - підкреслити переваги та приховати недоліки, а не переробити
                         </p>
                     </li>
@@ -149,14 +149,14 @@
                         </svg>
                     </button>
                     <ul class="procedures-list">
-                        <li class="procedures-item">
-                            <p>Маски для обличчя</p>
+                        <li class="procedures-item procedures-mask">
+                            <p class="procedures-item-text">Маски для обличчя</p>
                         </li>
-                        <li class="procedures-item">
-                            <p>Ін'єкції для обличчя</p>
+                        <li class="procedures-item procedures-injection">
+                            <p class="procedures-item-text">Ін'єкції для обличчя</p>
                         </li>
-                        <li class="procedures-item">
-                            <p>Очищення обличчя</p>
+                        <li class="procedures-item procedures-cleansing">
+                            <p class="procedures-item-text">Очищення обличчя</p>
                         </li>
                     </ul>
                     <button class="carousel-button next" type="button">
@@ -178,6 +178,31 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <div class="contact-form">
                         <h3>Запишіться <span class="accent">безкоштовно</span> та отримайте подарунок</h3>
+                        <form name="contact-form" autocomplete="on">
+                            <div class="contacts-section-form-field input">
+                                <label class="input-label vissully-hidden" for="user-name">Ваше ім'я та
+                                    прізвище</label>
+                                <input class="input-control" type="text" id="user-name" name="user-name"
+                                    placeholder="Ваше ім'я та прізвище" required pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$" />
+                            </div>
+                            <div class="contacts-section-form-field input">
+                                <label class="input-label vissully-hidden" for="user-tel">Ваш номер телефону</label>
+                                <input class="input-control" type="tel" id="user-tel" name="user-tel"
+                                    placeholder="Ваш номер телефону" required pattern="^\+380[0-9]{9}" />
+                            </div>
+                            <div class="contacts-section-form-field input">
+                                <label class="input-label vissully-hidden" for="user-tel">Ваша електронна пошта</label>
+                                <input class="input-control" type="email" id="user-email" name="user-email"
+                                    placeholder="Ваша електронна пошта" required />
+                            </div>
+                            <button class="button contacts-section-button" type="submit">
+                                Записатись безкоштовно
+                            </button>
+                            <p class="form-terms">
+                                Натискаючи на кнопку я погоджуюсь
+                                <a class="form-terms-link" href="#">з політикою конфіденційності</a>
+                            </p>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -247,9 +272,13 @@
         </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
         <div class="modal">
-            <button class="modal-btn-close" type="button">Close</button>
+            <button class="modal-btn-close" type="button">
+                <svg width="16" height="16">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
             <h2>Замовити дзвінок</h2>
             <p class="modal-text">Запишіться <span class="accent">безкоштовно</span> та отримайте подарунок</p>
             <form name="modal-form" autocomplete="on">
@@ -275,6 +304,7 @@
                 </p>
             </form>
         </div>
+    </div>
     </div>
 
     <script src="./js/modal.js"></script>
